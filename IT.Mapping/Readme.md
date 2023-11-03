@@ -4,7 +4,7 @@
 
 Interfaces of mapping
 
-## Map
+## How to use
 
 ```csharp
     public Person2 Map(IMapper mapper, Person person)

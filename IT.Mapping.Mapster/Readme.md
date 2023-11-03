@@ -4,7 +4,7 @@
 
 Implementation of mapping via Mapster
 
-## IMapper
+## How to use
 
 ```csharp
     private static IT.Mapping.IMapper GetMapsterMapper()

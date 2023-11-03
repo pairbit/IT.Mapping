@@ -13,13 +13,11 @@
 	<PublishRepositoryUrl>true</PublishRepositoryUrl>
 	<Authors>Ivan Tikhonov</Authors>
 	<Copyright>Ivan Tikhonov © 2022</Copyright>
-	<Version>2.0.1</Version>
+	<Version>2.0.2</Version>
 	<PackageTags>Mapping Mapper Mapster</PackageTags>
 	<PackageReadmeFile>Readme.md</PackageReadmeFile>
 	<PackageIcon>Icon.png</PackageIcon>
-	<PackageReleaseNotes>
-		add Microsoft.SourceLink.GitHub
-	</PackageReleaseNotes>
+	<PackageReleaseNotes></PackageReleaseNotes>
 	<SignAssembly>true</SignAssembly>
 	<AssemblyOriginatorKeyFile>..\IT.snk</AssemblyOriginatorKeyFile>
 	<IncludeSymbols>true</IncludeSymbols>

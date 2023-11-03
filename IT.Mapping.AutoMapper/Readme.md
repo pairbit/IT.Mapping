@@ -4,7 +4,7 @@
 
 Implementation of mapping via AutoMapper
 
-## IMapper
+## How to use
 
 ```csharp
     private static IT.Mapping.IMapper GetAutoMapper()
