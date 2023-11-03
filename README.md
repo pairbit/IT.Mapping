@@ -1,6 +1,4 @@
 # IT.Mapping
-[![NuGet version (IT.Mapping)](https://img.shields.io/nuget/v/IT.Mapping.svg)](https://www.nuget.org/packages/IT.Mapping)
-[![NuGet pre version (IT.Mapping)](https://img.shields.io/nuget/vpre/IT.Mapping.svg)](https://www.nuget.org/packages/IT.Mapping)
 
 ## How to use
 
