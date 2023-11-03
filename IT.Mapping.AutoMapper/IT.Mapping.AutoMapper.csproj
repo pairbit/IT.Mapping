@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	<TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
+	<TargetFramework>netstandard2.1</TargetFramework>
 	<LangVersion>latest</LangVersion>
 	<Nullable>enable</Nullable>
 	<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -35,7 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
 	<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 

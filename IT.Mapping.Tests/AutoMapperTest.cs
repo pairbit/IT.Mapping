@@ -1,3 +1,4 @@
+#if NETCOREAPP3_1_OR_GREATER
 using IT.Mapping.Tests.Data;
 
 namespace IT.Mapping.Tests;
@@ -20,3 +21,4 @@ public class AutoMapperTest : MapperTest
         cfg.CreateMap<Person2, Person>();
     }).CreateMapper();
 }
+#endif

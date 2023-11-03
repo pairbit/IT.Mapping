@@ -4,13 +4,13 @@ namespace IT.Mapping;
 
 public interface IMapper
 {
-    TTo Map<TTo>(Object from);
+    TTo Map<TTo>(object from);
 
     TTo Map<TFrom, TTo>(TFrom from);
 
     TTo Map<TFrom, TTo>(TFrom from, TTo? to);
 
-    Object Map(Type fromType, Object from, Type toType);
+    object Map(Type fromType, object from, Type toType);
 
-    Object Map(Type fromType, Object from, Type toType, Object? to);
+    object Map(Type fromType, object from, Type toType, object? to);
 }

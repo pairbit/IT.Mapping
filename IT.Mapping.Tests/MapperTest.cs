@@ -88,6 +88,7 @@ public abstract class MapperTest
         Assert.False(ReferenceEquals(person22, person23));
         Assert.That(person2, Is.EqualTo(person23));
 
+        Assert.That(person22, Is.Null);
         var person23o = _mapper.Map(typeof(Person), person, typeof(Person2), person22);
         Assert.False(ReferenceEquals(person22, person23o));
         Assert.That(person2, Is.EqualTo(person23o));
@@ -114,11 +115,11 @@ public abstract class MapperTest
         PersonEquals(person, person2);
     }
 
-    private void PersonEquals(Person person, Person2 person2)
+    private void PersonEquals(Person? person, Person2? person2)
     {
         if (person is null && person2 is null) return;
 
-        if (person is not null && person2 is not null)
+        if (person != null && person2 != null)
         {
             Assert.False(person.Equals(person2));
             Assert.That(person.Id, Is.EqualTo(person2.Id));
@@ -139,9 +140,9 @@ public abstract class MapperTest
         }
     }
 
-    private void ListEquals<T, T2>(IReadOnlyList<T> list, IReadOnlyList<T2> list2, Action<T, T2> equals)
+    private void ListEquals<T, T2>(IReadOnlyList<T>? list, IReadOnlyList<T2>? list2, Action<T, T2> equals)
     {
-        if (list is null && list2 is null ) return;
+        if (list is null && list2 is null) return;
         if ((list is null || list.Count == 0) && (list2 is null || list2.Count == 0))
         {
             Console.WriteLine($"Warning '{list?.Count}' != '{list2?.Count}'");
@@ -172,8 +173,10 @@ public abstract class MapperTest
         CityEquals(address.City, address2.City);
     }
 
-    private void CityEquals(City city, City2 city2)
+    private void CityEquals(City? city, City2? city2)
     {
+        Assert.That(city, Is.Not.Null);
+        Assert.That(city2, Is.Not.Null);
         Assert.False(city.Equals(city2));
         Assert.That(city.Name, Is.EqualTo(city2.Name));
         Assert.That(city.Count, Is.EqualTo(city2.Count));

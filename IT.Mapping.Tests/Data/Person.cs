@@ -32,7 +32,7 @@ public record Person
 {
     public int Id { get; set; }
 
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
     public int Age { get; set; }
 
@@ -40,22 +40,22 @@ public record Person
 
     public DateTime Created { get; set; }
 
-    public MyList<Address> Addresses { get; set; }
+    public MyList<Address>? Addresses { get; set; }
 
-    public Person Mother { get; set; }
+    public Person? Mother { get; set; }
 
-    public Person Father { get; set; }
+    public Person? Father { get; set; }
 
-    public MyList<Person> Childs { get; set; }
+    public MyList<Person>? Childs { get; set; }
 
-    public String? NotMapped { get; set; }
+    public string? NotMapped { get; set; }
 }
 
 public record Person2
 {
     public int Id { get; set; }
 
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
     public int Age { get; set; }
 
@@ -63,13 +63,13 @@ public record Person2
 
     public DateTime Created { get; set; }
 
-    public MyList<Address2> Addresses { get; set; }
+    public MyList<Address2>? Addresses { get; set; }
 
-    public Person2 Mother { get; set; }
+    public Person2? Mother { get; set; }
 
-    public Person2 Father { get; set; }
+    public Person2? Father { get; set; }
 
-    public MyList<Person2> Childs { get; set; }
+    public MyList<Person2>? Childs { get; set; }
 
-    public String? NotMapped2 { get; set; }
+    public string? NotMapped2 { get; set; }
 }
